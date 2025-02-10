@@ -1,3 +1,13 @@
+# Note: What I needed to create this project
+1. `npx create-react-app my-react-redux-app --template redux`
+I got the dependency errors since dependency tree requires react@18, BUT react@latest is 19.
+So I did the followings manually.
+2. `cd my-react-redux-app`
+3. `npm uninstall react react-dom`
+4. `npm install react@18 react-dom@18`
+5. `npm install react-redux @reduxjs/toolkit`
+6. `npm install web-vitals`
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
